@@ -1,0 +1,1 @@
+(()=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches||!window.gsap)return;const{gsap}=window;gsap.timeline({defaults:{ease:'power3.out'}}).from('.hero-image',{autoAlpha:0,scale:1.025,duration:.65}).from('.hero header',{autoAlpha:0,y:-10,duration:.3},'-.35').from('.hero-text>*',{autoAlpha:0,y:18,stagger:.07,duration:.38},'-.15')})()

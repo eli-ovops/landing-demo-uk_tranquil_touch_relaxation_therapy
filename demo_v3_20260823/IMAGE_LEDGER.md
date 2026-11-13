@@ -1,0 +1,11 @@
+# Image Ledger — v3
+
+| Placement | Purpose | Prompt or brief | Source | AI status | Rights status | SHA-256 |
+|---|---|---|---|---|---|---|
+| Arrival hero only | Identify the actual Tranquil Touch setting with one dedicated real scene | Minimum-use crop of the public BookApp hero; no manipulation or implied claim beyond the visible room | https://s3.amazonaws.com/assets.shrthnd.com/location/51273/images/onlineHero/large.jpg?ts=1778094367, retrieved 2026-08-23 | Not AI | `CUSTOMER AUTHORIZATION: NOT VERIFIED`; public concept/research use only | `16c600a95b6d01d66cbc39385456f3c9215ad8f1f208b95ac83956bb0e6877ba` |
+| Header logo only | Identify business without inventing a wordmark | Official public logo, shown once without alteration | https://s3.amazonaws.com/assets.shrthnd.com/location/51273/images/onlineLogo/large.png?ts=1778094367, retrieved 2026-08-23 | Not AI | `CUSTOMER AUTHORIZATION: NOT VERIFIED`; public concept/research use only | `ddb01146a947e6bf79be65311fe49dae445a92d579cd8475507144cf4f115b16` |
+| Unused internal concept asset | Retained only for internal record after visual review; not rendered | Original conceptual macro photograph: flowing water over pale stone and a folded warm-white cotton towel; no person, location, logo, text, product or spa trope | Built-in ImageGen, generated 2026-08-23; prompt recorded above | AI concept image | Original concept asset. It is not represented as a Tranquil Touch asset or business fact, and is not customer-visible. | `3ee9e6fdd2004145c370f71c559fff993a55ac7a2a88c32484b0e1de6e7f5a7b` |
+
+No hash is repeated. Each file has one placement and one purpose. The visible page uses only the natural `Independent concept preview` identity label; rights and generation details stay in this internal ledger.
+
+Runtime map layer: the Visit & Contact region uses nine public OpenStreetMap raster tiles at zoom 16 (tile coordinates x=32061–32063, y=20384–20386), displayed with the required OpenStreetMap attribution. These external runtime map files are not project-local files, so a local SHA-256 is not applicable. The pin uses public FK7 8BS postcode-centre coordinates only; the exact public business address remains present and opens in Google Maps.

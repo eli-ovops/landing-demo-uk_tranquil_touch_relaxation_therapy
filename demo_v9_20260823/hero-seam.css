@@ -1,0 +1,53 @@
+.hero{position:relative;isolation:isolate;overflow:hidden;background:#2a1832}
+.hero::before{content:"";position:absolute;z-index:2;inset:0;pointer-events:none;background:linear-gradient(90deg,#2a1832 0%,#2a1832 34%,rgba(45,25,59,.98) 43%,rgba(68,35,96,.78) 52%,rgba(101,52,142,.35) 62%,rgba(123,67,169,0) 74%)}
+.hero-copy{position:relative;z-index:3;background:transparent!important}
+.hero-copy:after{display:none!important}
+.hero-image{z-index:1}
+.hero-image:before{display:none!important}
+.hero-image:after{background:transparent!important}
+@media(max-width:760px){.hero::before{background:linear-gradient(180deg,rgba(42,24,50,.94) 0%,rgba(42,24,50,.88) 27%,rgba(49,27,64,.77) 49%,rgba(56,29,75,.68) 69%,rgba(50,26,65,.78) 100%)}}
+
+/* The dark Hero recedes into the same canvas as the ritual index, rather than ending as a hard slab. */
+.hero+.ritual{position:relative;margin-top:0;padding-top:clamp(170px,14vw,230px)}
+.hero+.ritual::before{content:"";position:absolute;z-index:0;top:0;left:0;right:0;height:clamp(130px,12vw,190px);background:linear-gradient(180deg,#2a1832 0%,rgba(66,38,72,.82) 31%,rgba(153,107,135,.31) 68%,rgba(249,239,233,0) 100%);pointer-events:none}
+.hero+.ritual>*{position:relative;z-index:1}
+@media(max-width:760px){.hero-image figcaption{display:none}.hero+.ritual{padding-top:125px}.hero+.ritual::before{height:102px;background:linear-gradient(180deg,#2a1832 0%,rgba(71,40,77,.78) 38%,rgba(181,125,145,.22) 74%,rgba(249,239,233,0) 100%)}}
+
+/* Keep the practical visit details in three readable groups: address, hours, then contact + booking. */
+.details{padding-top:48px;padding-bottom:44px}
+.details h3{line-height:1.02;margin-bottom:24px}
+.details>a:not(.button){margin-bottom:6px}
+.details dl{margin-top:32px}
+.details dl div{padding:9px 0}
+.contact{gap:7px;margin-top:26px}
+.details .peach{min-height:52px;margin-top:28px}
+@media(max-width:760px){.details{padding-top:38px;padding-bottom:38px}.details h3{margin-bottom:23px}.details .peach{margin-top:27px}}
+
+/* Final reading hierarchy: proof and actions should be effortless to scan at normal viewing distance. */
+.eyebrow{font-size:10.5px;letter-spacing:.145em}
+.hero-foot{font-size:9.5px;letter-spacing:.11em}
+.ritual-list article>a{display:inline-flex;align-items:center;align-self:center;min-height:38px;padding:0 0 0 3px;font-size:11px;letter-spacing:.1em;color:#5b3249;transition:color .2s ease,transform .2s ease}
+.ritual-list article>a:hover{color:#9c564e;transform:translateX(3px)}
+.other{font-size:12.5px;line-height:1.55}
+.quotes figure{padding:32px}
+.quotes figcaption{font-size:12px;line-height:1.4;color:#705260}
+.quotes>div b{font-size:80px}
+.quotes>div span{font-size:10.5px;line-height:1.5;max-width:140px}
+.reviews-title>a,.details>a:not(.button),.stillness a{font-size:13px;letter-spacing:.01em}
+footer{font-size:10px;letter-spacing:.075em}
+@media(max-width:760px){.eyebrow{font-size:9.5px;letter-spacing:.13em}.ritual-list article>a{min-height:32px;font-size:10px}.quotes figure{padding:26px}.quotes figcaption{font-size:11px}.quotes>div span{font-size:10px}footer{font-size:9px}}
+
+/* Editorial tension without adding a new component: one decisive title, then three calm choices. */
+.hero-text{max-width:455px}
+.hero-text h1{max-width:none;font-size:clamp(58px,6.3vw,104px);line-height:.93;letter-spacing:-.06em;text-wrap:normal}
+.hero-text h1 em{display:inline-block;transform:translateX(-.025em)}
+.hero-text>p:not(.eyebrow){max-width:330px;margin-bottom:0}
+.hero .button{min-height:54px;padding-left:20px;padding-right:17px;margin-top:29px}
+.ritual-list{border-top-color:rgba(64,35,57,.2)}
+.ritual-list article{grid-template-columns:52px 1fr auto;gap:28px;padding:30px 0 34px}
+.ritual-list article>p{color:#9a5d69;font-weight:500}
+.ritual-list h3{font-size:clamp(43px,3.55vw,54px);line-height:.9;letter-spacing:-.055em;margin-bottom:12px}
+.ritual-list div>p{max-width:360px;line-height:1.55}
+.ritual-list article>a{align-self:end;border-bottom-color:rgba(91,50,73,.6);padding-bottom:8px}
+.ritual-list article>a:hover{border-bottom-color:#9c564e}
+@media(max-width:760px){.hero-text h1{font-size:65px;line-height:.93;letter-spacing:-.06em}.hero .button{min-height:52px;margin-top:27px}.ritual-list article{grid-template-columns:30px 1fr;gap:11px;padding:25px 0 28px}.ritual-list h3{font-size:38px;line-height:.91;margin-bottom:9px}.ritual-list div>p{line-height:1.5}.ritual-list article>a{padding-bottom:5px}}
